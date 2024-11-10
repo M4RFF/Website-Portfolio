@@ -5,6 +5,9 @@ This repository hosts the source code for my personal portfolio website. Designe
 ### Live Demo
 Check out the live version of my portfolio here: [My Portfolio](https://m4rff.github.io/)
 
+### My CV
+Check out the CV here: [My CV](https://docs.google.com/document/d/1ga0Z6al6HpkLfXhMjJISrMDOlsPrRCmDi-EblOEGHVk/edit?tab=t.0)
+
 ---
 
 ## Technologies Used
