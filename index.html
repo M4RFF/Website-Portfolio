@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Maksim Shcherbakov - Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="header-left">Maksim Shcherbakov.</div>
+    <div class="header-right"><a href="#contact">Contact</a></div>
+  </header>
+
+  <!-- Introduction Section -->
+  <section id="introduction">
+    <div class="intro-text">
+      <h1>
+        Hello, I'm <br>
+        <span>Maksim Shcherbakov</span>
+      </h1>
+      <p>
+        A computer science student from <br>
+        Hungary. I aim to deepen my <br>
+        understanding in various areas of <br>
+        technology and product development.
+      </p>
+    </div>
+    <div class="intro-image">
+      <img src="images/profile.jpg" alt="Profile picture of me" class="zoom-image">
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+<section id="projects">
+    <h2>Projects.</h2>
+    <div class="project-grid">
+      
+      <!-- Project 1 -->
+      <div class="project-card">
+        <img src="images/perfd.png" alt="perfd: system demon for automatic application BOLT">
+        <h3>perfd: System Daemon for Automatic Application BOLT</h3>
+        <p>In this project, I developed a Linux system daemon for automatic performance profiling and optimization of applications using BOLT. I implemented methods for performance measurement, profile data collection, and code optimization, enabling enhanced application efficiency with reduced energy consumption on Linux-based systems.<br>
+            <a href="https://docs.google.com/presentation/d/1ufSNaqxTLJuADPjEeH_-dTKT2dwG3porhjsD3jRbOB8/edit#slide=id.p1">(Python)</a></p>
+      </div>
+  
+      <!-- Project 2 -->
+      <div class="project-card"> 
+        <img src="images/golang.png" alt="Tinkoff Course Golang">
+        <h3>Tinkoff Bank Course Golang</h3>
+        <p>Upon completing Tinkoff's Go course, I acquired both fundamental and advanced programming skills in Go, including the development of concurrent applications, data and network handling, as well as the ability to write and test high-performance, fault-tolerant code.<br>
+             <a href="#">(Golang)</a></p>
+      </div>
+  
+      <!-- Project 3 -->
+      <div class="project-card">
+        <img src="images/comp.png" alt="Compiler performance optimization">
+        <h3>Compiler performance optimization</h3>
+        <p>
+            From this project, I learned about various methods to optimize the compilation speed of C/C++ projects, especially by exploring tools like BOLT, LTO, and PGO. Additionally, I developed and implemented an automated performance measurement methodology in Linux, which significantly aids in identifying and applying optimization techniques to reduce build times effectively. <br>
+            <a href="#">(Python, Golang, C++)</a></p>
+      </div>
+  
+    </div>
+</section>
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <h2>Get in touch.</h2>
+    <p>
+        I would be happy to further discuss my experiences<br> 
+        with you. Simply shoot me an email or message me <br>
+        on LinkedIn! :)
+    </p>
+    <p id="email-address">maksim.shcherbakov.sh@gmail.com</p>
+  </section>
+
+  <!-- Bottom Container with Social Icons and Easter Egg Button -->
+  <div class="bottom-container">
+    <div class="social-icons">
+      <a href="mailto:maksim.shcherbakov.sh@gmail.com" target="_blank"><img src="images/mail.png" alt="Email"></a>
+      <a href="https://www.linkedin.com/in/maksim-shcherbakov-110b00303/" target="_blank"><img src="images/linkedin.png" alt="LinkedIn"></a>
+      <a href="https://github.com/M4RFF" target="_blank"><img src="images/github.png" alt="GitHub"></a>
+    </div>
+    <div class="easter-egg-container">
+      <p id="click-count">You clicked 0 times</p>
+      <button id="easter-egg-button">Easter Egg</button>
+    </div>
+  </div>
+
+  <!-- JavaScript to Show Bottom Container on Scroll -->
+  <script>
+    function checkScrollBottom() {
+        const bottomContainer = document.querySelector('.bottom-container');
+        
+        if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight) {
+            bottomContainer.style.display = 'flex'; 
+        } else {
+            bottomContainer.style.display = 'none'; 
+        }
+    }
+
+    window.addEventListener('scroll', checkScrollBottom);
+  </script>
+
+  <!-- Include any additional JavaScript file -->
+  <script src="script.js"></script>
+</body>
+</html>
