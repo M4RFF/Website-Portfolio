@@ -61,6 +61,19 @@ header {
     margin-left: 6cm; 
 }
 
+/* Responsive design for the introduction section */
+@media (max-width: 768px) {
+    #introduction {
+        flex-direction: column; /* Stacks text and image vertically */
+        align-items: center;
+        padding-left: 0; /* Removes extra padding on smaller screens */
+    }
+
+    .intro-image img {
+        margin-left: 0; /* Centers image on smaller screens */
+    }
+}
+
 /* Projects Section */
 #projects {
     padding: 3rem 2rem;
@@ -94,7 +107,6 @@ header {
     transform: scale(1.05); 
 }
 
-/* Image Styling */
 .project-card img {
     width: 100%;
     height: auto;
@@ -102,7 +114,6 @@ header {
     margin-bottom: 1rem;
 }
 
-/* Title and Description */
 .project-card h3 {
     font-size: 1.3rem;
     color: #333;
@@ -125,18 +136,10 @@ header {
     text-decoration: underline;
 }
 
-/* Container to limit overflow (optional) */
-.image-container {
-    overflow: hidden; 
-    display: inline-block; 
-}
-
-/* Image style with zoom effect */
 .zoom-image {
     transition: transform 0.3s ease; 
 }
 
-/* Zoom effect on hover */
 .zoom-image:hover {
     transform: scale(1.1); 
 }
@@ -173,7 +176,7 @@ header {
     margin-top: 1rem;
 }
 
-/* Bottom Container for Social Icons and Easter Egg Button */
+/* Bottom Container */
 .bottom-container {
     display: flex;
     justify-content: space-between;
@@ -197,23 +200,21 @@ header {
     width: 45px;
     height: 45px;
     cursor: pointer;
+    transition: transform 0.3s ease, filter 0.3s ease;
 }
 
-/* Easter Egg Button Styling */
-.easter-egg-container {
-    text-align: right; 
+/* Hover effects with official colors */
+.social-icons a[href*="mailto"] img:hover {
+    transform: scale(1.2);
+    filter: brightness(0) saturate(100%) invert(36%) sepia(95%) saturate(2312%) hue-rotate(174deg) brightness(92%) contrast(85%);
 }
 
-#click-count {
-    font-size: 1rem;
-    margin-bottom: 0.5rem;
+.social-icons a[href*="linkedin"] img:hover {
+    transform: scale(1.2);
+    filter: brightness(0) saturate(100%) invert(43%) sepia(45%) saturate(635%) hue-rotate(166deg) brightness(94%) contrast(87%);
 }
 
-#easter-egg-button {
-    padding: 0.5rem 1rem;
-    cursor: pointer;
-    background-color: #333;
-    color: #fff;
-    border: none;
-    border-radius: 4px;
+.social-icons a[href*="github"] img:hover {
+    transform: scale(1.2);
+    filter: brightness(0) saturate(100%) invert(17%) sepia(8%) saturate(1171%) hue-rotate(165deg) brightness(99%) contrast(89%);
 }
