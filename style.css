@@ -9,6 +9,7 @@ body {
     font-family: Arial, sans-serif;
     background-color: #f3f5f9;
     color: #333333;
+    font-size: 18px; 
 }
 
 /* Header Styling */
@@ -34,7 +35,6 @@ header {
     display: flex;
     align-items: center;
     padding: 3rem 2rem;
-    padding-left: 2cm; 
     background: linear-gradient(135deg, #dce1eb, #f3f5f9);
 }
 
@@ -61,16 +61,16 @@ header {
     margin-left: 6cm; 
 }
 
-/* Responsive design for the introduction section */
+/* Responsive Design for the Introduction Section */
 @media (max-width: 768px) {
     #introduction {
-        flex-direction: column; /* Stacks text and image vertically */
+        flex-direction: column; 
         align-items: center;
-        padding-left: 0; /* Removes extra padding on smaller screens */
+        padding-left: 0;
     }
 
     .intro-image img {
-        margin-left: 0; /* Centers image on smaller screens */
+        margin-left: 0;
     }
 }
 
@@ -89,8 +89,8 @@ header {
 /* Project Grid Layout */
 .project-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); 
-    gap: 2rem; 
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
 }
 
 /* Project Card Styling */
@@ -100,11 +100,11 @@ header {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     padding: 1.5rem;
     text-align: center;
-    transition: transform 0.2s ease; 
+    transition: transform 0.2s ease;
 }
 
 .project-card:hover {
-    transform: scale(1.05); 
+    transform: scale(1.05);
 }
 
 .project-card img {
@@ -137,42 +137,42 @@ header {
 }
 
 .zoom-image {
-    transition: transform 0.3s ease; 
+    transition: transform 0.3s ease;
 }
 
 .zoom-image:hover {
-    transform: scale(1.1); 
+    transform: scale(1.1);
 }
 
 /* Contact Section */
 #contact {
-    padding: 3rem 2rem;
+    padding: 3rem 2rem; 
     text-align: center;
     background-color: #dce1eb;
 }
 
 #contact h2 {
-    font-size: 6rem;       
-    text-align: left;      
-    padding-left: 1.3cm;   
-    margin-bottom: 1rem;   
+    font-size: 6rem; 
+    text-align: left;
+    padding-left: 1.3cm;
+    margin-bottom: 1rem;
 }
 
 #contact p {
-    font-size: 34px;        
-    line-height: 1.4;       
+    font-size: 34px; 
+    line-height: 1.4;
     color: #646363;
     margin-top: 1rem;
-    text-align: left;       
-    padding-left: 1.5cm;    
+    text-align: left;
+    padding-left: 1.5cm;
 }
 
 #email-address {
-    font-size: 40px;        
-    font-weight: bold;     
-    color: #000000;         
-    text-align: left;       
-    padding-left: 4cm;      
+    font-size: 40px; 
+    font-weight: bold;
+    color: #000000;
+    text-align: left;
+    padding-left: 4cm;
     margin-top: 1rem;
 }
 
@@ -190,6 +190,30 @@ header {
     display: none; 
 }
 
+.easter-egg-container {
+    text-align: center;
+}
+
+#click-count {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 0.5rem;
+}
+
+#easter-egg-button {
+    background-color: #0d4ed1;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#easter-egg-button:hover {
+    background-color: #083a99;
+}
+
 /* Social Icons Styling */
 .social-icons {
     display: flex;
@@ -203,18 +227,50 @@ header {
     transition: transform 0.3s ease, filter 0.3s ease;
 }
 
-/* Hover effects with official colors */
-.social-icons a[href*="mailto"] img:hover {
-    transform: scale(1.2);
-    filter: brightness(0) saturate(100%) invert(36%) sepia(95%) saturate(2312%) hue-rotate(174deg) brightness(92%) contrast(85%);
-}
-
-.social-icons a[href*="linkedin"] img:hover {
+.social-icons img:hover {
     transform: scale(1.2);
     filter: brightness(0) saturate(100%) invert(43%) sepia(45%) saturate(635%) hue-rotate(166deg) brightness(94%) contrast(87%);
 }
 
-.social-icons a[href*="github"] img:hover {
-    transform: scale(1.2);
-    filter: brightness(0) saturate(100%) invert(17%) sepia(8%) saturate(1171%) hue-rotate(165deg) brightness(99%) contrast(89%);
+/* Media Queries for Font Size Adjustments */
+@media (max-width: 1152px) {
+    body {
+        font-size: 16px;
+    }
+
+    h1, h2 {
+        font-size: 90%;
+    }
+
+    p {
+        font-size: 85%;
+    }
+}
+
+@media (max-width: 992px) {
+    body {
+        font-size: 14px;
+    }
+
+    h1, h2 {
+        font-size: 80%;
+    }
+
+    p {
+        font-size: 75%;
+    }
+}
+
+@media (max-width: 576px) {
+    body {
+        font-size: 12px;
+    }
+
+    h1, h2 {
+        font-size: 70%;
+    }
+
+    p {
+        font-size: 65%;
+    }
 }
