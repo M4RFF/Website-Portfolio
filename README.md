@@ -23,4 +23,4 @@ Check out the CV here: [My CV](https://docs.google.com/document/d/1ga0Z6al6HpkLf
 
 1. **Clone the repository**:
    ```bash
-   git clone https://github.com/M4RFF/M4RFF.github.io
+   git clone https://github.com/makswilder/makswilder.github.io
